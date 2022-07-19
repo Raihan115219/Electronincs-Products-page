@@ -1,5 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+body {
+  max-width: 992px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  background-color: aliceblue;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/* all button will be same */
+.btn {
+  padding: 12px;
+  outline: none;
+  border: 1px solid purple;
+  background: purple;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 20px;
+}
+.fa-arrow-right {
+  margin-left: 8px;
+}
+
+.container {
+  margin: 40px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-items ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  align-items: center;
+}
+.nav-items ul li {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 5px 10px;
+}
+.nav-Active {
+  border-bottom: 2px solid purple;
+  font-weight: 900;
+  color: blueviolet;
+}
+/* .nav-items ul li:hover {
+  border-bottom: 2px solid purple;
+} */
+/* =========banner section start */
+.banner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10% 50px;
+}
+.banner .banner-text {
+  width: 50%;
+}
+.banner .banner-text h1 {
+  font-size: 7vmin;
+  font-weight: 900;
+  color: #363434;
+}
+.banner .banner-text p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #363434;
+  padding: 0 20px 40px 0px;
+}
+.banner .banner-image {
+  width: 50%;
+}
+.banner-image img {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin-left: 50px;
+}
+/* ======= */
+/* sponser section */
+.sponser {
+  margin: 20px 100px;
+  padding: 15px;
+  border-top: 1px solid lightblue;
+  border-bottom: 2px solid lightblue;
+}
+.sponser-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sponser-items img {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+/* collectins section */
+.populer-collections {
+  margin: 20px 100px;
+  padding: 15px;
+}
+.collection-title h4 {
+  text-align: center;
+  padding: 30px;
+  font-size: 5vmin;
+  color: #363434;
+}
+.collection-itmes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.collection-itmes .items {
+  padding: 15px;
+  background: #fff;
+  -webkit-box-shadow: -1px -2px 8px 1px rgba(92, 92, 92, 0.86);
+  box-shadow: -1px -2px 8px 1px rgba(92, 92, 92, 0.86);
+  border-radius: 8px;
+}
+.items img {
+  width: 100%;
+  text-align: center;
 }
